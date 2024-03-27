@@ -1,2 +1,2 @@
 # holbertonschool-higher_level_programming
-python exercices for bridge session
+python exercices for Holberton bridge session
