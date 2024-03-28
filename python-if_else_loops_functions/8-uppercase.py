@@ -5,6 +5,6 @@ def uppercase(input):
     for c in input:
         code = ord(c)
         if code >= 97 and code <= 122:
-            print(chr(code-32), end="")
+            print("{}".format(chr(code-32)), end="")
         else:
-            print(c, end="")
+            print("{}".format(c), end="")
