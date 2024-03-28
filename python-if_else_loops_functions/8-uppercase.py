@@ -4,7 +4,9 @@ def uppercase(input):
         raise TypeError("arg must be a string")
     for c in input:
         code = ord(c)
+        newChar = c
         if code >= 97 and code <= 122:
-            print("{}".format(chr(code-32)), end="")
-        else:
-            print("{}".format(c), end="")
+            newChar = chr(code-32) 
+        print("{}".format(newChar), end="")
+    else:
+        print("\n", end="")
