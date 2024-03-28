@@ -6,7 +6,7 @@ def uppercase(input):
         code = ord(c)
         newChar = c
         if code >= 97 and code <= 122:
-            newChar = chr(code-32) 
+            newChar = chr(code-32)
         print("{}".format(newChar), end="")
     else:
         print("\n", end="")
