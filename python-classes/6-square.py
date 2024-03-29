@@ -34,12 +34,16 @@ class Square:
             or not isinstance(position[1], int)
             or position[0] < 0
             or position[1] < 0
+            or len(position) != 2
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
 
     def my_print(self):
         """Draw the square with character #."""
+        if self.__size == 0:
+            print("\n", end="")
+            return
         for i in range(self.__position[1]):
             print("\n", end="")
         for i in range(self.__size):
@@ -50,8 +54,6 @@ class Square:
                 print("{}".format(char), end="")
             else:
                 print("\n", end="")
-        if self.__size == 0:
-            print("\n", end="")
 
     def area(self):
         """Returns current square area."""
