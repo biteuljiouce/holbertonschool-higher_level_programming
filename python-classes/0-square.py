@@ -4,5 +4,5 @@
 """Define a class Square."""
 
 class Square:
-    """Implement a square (geometrical object)
+    """Implement a square (geometrical object)"""
     pass
