@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+# 0-square.py
+# Cedric Houvenagel
+"""Define a class Square."""
+
 class Square:
-    ''' This class does nothing '''
+    """Implement a square (geometrical object)
     pass
