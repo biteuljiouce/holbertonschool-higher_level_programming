@@ -3,6 +3,7 @@
 # Cedric Houvenagel
 """Define a class Square."""
 
+
 class Square:
     """Implement a square (geometrical object)"""
     pass
