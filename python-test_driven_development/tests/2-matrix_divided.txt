@@ -36,16 +36,28 @@ Cannot divide by zero
     ...
     ZeroDivisionError: division by zero
 
-#Missing args
-#
-#    >>>> print(matrix_divided([[1,2], [1,2]]))
-#    Traceback (most recent call last):
-#    ...
-#    TypeError: matrix must be a matrix (list of lists) of integers/floats
-#
-#    >>>> print(matrix_divided())
-#    Traceback (most recent call last):
-#    ...
-#    TypeError: matrix must be a matrix (list of lists) of integers/floats
+Normal
+
+    >>> print(matrix_divided([[2,6],[4,8]], 2))
+    [[1.0, 3.0], [2.0, 4.0]]
+
+Divide by infinity
+
+    >>> print(matrix_divided([[2,6],[4,8]], float(10e+300)))
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+Missing arg
+
+    >>> print(matrix_divided([[2,6],[4,8]]))
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    >>> print(matrix_divided())
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
 '''
