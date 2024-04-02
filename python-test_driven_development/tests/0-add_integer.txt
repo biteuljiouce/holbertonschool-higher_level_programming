@@ -1,16 +1,16 @@
 '''
 Tests for the module 0-add_integer.
 
-0 - first import the module
+First import the module
 
     >>> add_integer = __import__('0-add_integer').add_integer
 
-1 - input casting into int
+Input casting into int
 
     >>> print(add_integer(1.0234, 2.64))
     3
 
-2 - input with wrong type
+Input with wrong type
 
     >>> print(add_integer('hello',1))
     Traceback (most recent call last):
@@ -22,7 +22,7 @@ Tests for the module 0-add_integer.
     ...
     TypeError: b must be an integer
 
-3 - negative numbers
+Negative numbers
 
     >>> print(add_integer(100, -2))
     98
@@ -33,11 +33,24 @@ Tests for the module 0-add_integer.
     >>> print(add_integer(-100, -2))
     -102
 
-4 - no value given
+Wrong or no value given
 
     >>> print(add_integer(None))
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
+
+    >>> print(add_integer())
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> print(add_integer(1))
+    99
+
+    >>> print(add_integer(1e+500, 1))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
 
 '''
