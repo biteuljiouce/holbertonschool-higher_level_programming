@@ -16,12 +16,12 @@ def matrix_divided(matrix, div):
         if len(line) != len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
     # Check if all value are int or float
-    if not isinstance(div, int):
-        raise TypeError("div must be an integer")
     for line in matrix:
         for val in line:
             if not isinstance(val, int) and not isinstance(val, float):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not isinstance(div, int):
+        raise TypeError("div must be an number")
     # calculate result
     res_matrix = []
     for line in matrix:
