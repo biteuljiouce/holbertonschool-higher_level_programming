@@ -19,7 +19,7 @@ Rows must have same size
 
 All values must be int or float
 
-    >>> print(matrix_divided([[1, 'a'], [1,2]], 1))
+    >>> print(matrix_divided([[1, 'a'], [1,2]], 1)) # doctest: +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
