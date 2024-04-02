@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# 2-matrix_divided.py
 """
     This module deals with matrix calculation.
 """
@@ -32,5 +31,3 @@ def matrix_divided(matrix, div):
         else:
             res_matrix.append(res_line)
     return res_matrix
-
-print(matrix_divided( [[3, "9"], [15, 3]], 2))
