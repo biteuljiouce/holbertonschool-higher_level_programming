@@ -27,7 +27,7 @@ All values must be int or float
     >>> print(matrix_divided([[1, 2], [1,2]], 'a'))
     Traceback (most recent call last):
     ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    TypeError: div must be a number
 
 Cannot divide by zero
 
@@ -36,16 +36,16 @@ Cannot divide by zero
     ...
     ZeroDivisionError: division by zero
 
-Missing args
-
-    >>>> print(matrix_divided([[1,2], [1,2]]))
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-    >>>> print(matrix_divided())
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+#Missing args
+#
+#    >>>> print(matrix_divided([[1,2], [1,2]]))
+#    Traceback (most recent call last):
+#    ...
+#    TypeError: matrix must be a matrix (list of lists) of integers/floats
+#
+#    >>>> print(matrix_divided())
+#    Traceback (most recent call last):
+#    ...
+#    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 '''
