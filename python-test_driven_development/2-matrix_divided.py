@@ -3,6 +3,7 @@
     This module deals with matrix calculation.
 """
 
+
 def matrix_divided(matrix, div):
     """
     Use a matrix of float or integer.
@@ -19,7 +20,8 @@ def matrix_divided(matrix, div):
     for line in matrix:
         for val in line:
             if not isinstance(val, int) and not isinstance(val, float):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError('matrix must be a matrix \
+                (list of lists) of integers/floats')
     if not isinstance(div, int):
         raise TypeError("div must be a number")
     # calculate result
