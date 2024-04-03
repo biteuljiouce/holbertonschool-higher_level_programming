@@ -19,5 +19,3 @@ def print_square(size):
             print("#", end="")
         else:
             print("\n", end="")
-    if size == 0:
-        print("\n", end="")
