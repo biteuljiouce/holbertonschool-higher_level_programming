@@ -1,0 +1,33 @@
+'''
+Tests for the module 3-say_my_name.
+
+First import the module
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Arg must be string
+
+    >>> text_indentation(1) # doctest: +ELLIPSIS
+    Traceback (most recent call last):
+    ...
+    TypeError: ... must be a string
+
+Nominal
+
+    >>> text_indentation("Marie a un p'tit agneau. Ha bon ? c'est pas plutôt un : cheval")
+    Marie a un p'tit agneau.
+    <BLANKLINE>
+    Ha bon ?
+    <BLANKLINE>
+    c'est pas plutôt un :
+    <BLANKLINE>
+    cheval
+
+Missing arg
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+'''
