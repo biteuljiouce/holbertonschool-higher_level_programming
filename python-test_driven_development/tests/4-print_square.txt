@@ -5,11 +5,37 @@ First import the module
 
     >>> print_square = __import__('4-print_square').print_square
 
-Args must be string
+Size arg must be a integer
 
     >>> print_square("hello")
     Traceback (most recent call last):
     ...
     TypeError: size must be an integer
+
+    >>> print_square(1.234)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Size arg must be >= 0
+
+    >>> print_square(-3)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+Nominal
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+Missing 1 arg
+
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
 
 '''
